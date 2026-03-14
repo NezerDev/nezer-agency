@@ -3,51 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Residences | Luxury Concept by Nezer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Lato', sans-serif; }
-        .font-serif { font-family: 'Playfair Display', serif; }
-        .bg-gold { background-color: #C5A880; }
-        .text-gold { color: #C5A880; }
-    </style>
+    <title>Nezer Web Solutions | High-Conversion Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-neutral-900 text-white">
-    <nav class="p-6 flex justify-between items-center border-b border-white/10">
-        <div class="font-serif text-xl tracking-widest uppercase">NOVA <span class="text-gold text-sm font-sans">by Nezer</span></div>
-        <a href="index.html" class="text-[10px] uppercase tracking-widest border border-white/20 px-4 py-2 hover:bg-white hover:text-black transition">Back to Agency</a>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">
+            <div class="logo-diamond"></div>
+            <span class="brand-name">Nezer Web Solutions</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <header class="relative h-[70vh] flex items-center justify-center text-center px-6">
-        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80" class="absolute inset-0 w-full h-full object-cover opacity-40" alt="Luxury Home">
-        <div class="relative z-10">
-            <p class="text-gold uppercase tracking-[.4em] text-xs mb-4">Portfolio Showcase</p>
-            <h1 class="font-serif text-4xl md:text-7xl mb-8">Elegance in Every Square Foot.</h1>
-            <div class="h-1 w-20 bg-gold mx-auto"></div>
+    <header class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content hidden">
+            <span class="agency-badge">PREMIUM WEB AGENCY</span>
+            <h1>Elevate Your Digital <br><span class="highlight">Presence.</span></h1>
+            <p>We craft high-performance, custom web solutions designed to convert visitors into loyal clients for businesses in Ibafo and beyond.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Start Your Project</a>
+                <a href="#services" class="btn btn-outline">View Services</a>
+            </div>
         </div>
     </header>
 
-    <section class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="font-serif text-3xl mb-6">Designed for Conversion</h2>
-                <p class="text-gray-400 font-light leading-relaxed mb-6">In the luxury real estate market, your website is your virtual showroom. We build interfaces that emphasize high-quality imagery, smooth interactions, and clear calls to action.</p>
-                <ul class="space-y-3 text-sm text-gold">
-                    <li>✦ Mobile-First Responsive Design</li>
-                    <li>✦ High-Speed Asset Loading</li>
-                    <li>✦ Integrated Lead Capture</li>
-                </ul>
+    <section id="services" class="services-section">
+        <div class="section-header hidden">
+            <h2>Our Expertise</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card hidden">
+                <div class="card-icon">💻</div>
+                <h3>Custom Development</h3>
+                <p>No templates. We build fast, responsive websites tailored precisely to your brand's unique identity.</p>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=400&q=80" class="rounded shadow-xl" alt="Interior">
-                <img src="https://images.unsplash.com/photo-1613490908575-520e7ab0c67d?auto=format&fit=crop&w=400&q=80" class="rounded shadow-xl mt-8" alt="Villa">
+            <div class="service-card hidden">
+                <div class="card-icon">📈</div>
+                <h3>Conversion SEO</h3>
+                <p>Beautiful sites are useless if no one sees them. We optimize your platform to rank higher and attract your target niche.</p>
+            </div>
+            <div class="service-card hidden">
+                <div class="card-icon">🤝</div>
+                <h3>Dedicated Support</h3>
+                <p>Our team partners with you for the long haul, ensuring your digital infrastructure scales as your business grows.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-white/10">
-        <p class="text-gray-500 text-xs">A Nezer Web Solutions Digital Asset</p>
+    <section id="contact" class="cta-section hidden">
+        <div class="cta-box">
+            <h2>Ready to upgrade your business?</h2>
+            <p>Let's discuss how a premium web presence can drive your revenue.</p>
+            <a href="mailto:nezer.web.solutions@gmail.com" class="btn">Consult With Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nezer Web Solutions. Engineered for Growth.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-  </html>
+</html>
